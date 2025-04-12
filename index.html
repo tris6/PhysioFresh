@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon.png" />
+  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>PhysioFresh</title>
+</head>
+
+<body>
+
+  <div class="main-page" id="main-page">
+
+    <div class="section section_nav-bar">
+      <div class="small-logos">
+        <img src="media/APA.webp" alt="APA logo">
+        <div class="nav-bar_ndis">
+          <img src="media/ndis.webp" alt="NDIS logo">
+          <a href="ndis.html"><button class="button button_ndis button_flex pointer">See NDIS Services</button></a>
+        </div>
+      </div>
+      <div class="logo">
+        <img src="media/logo.svg" alt="Physio Fresh logo">
+      </div>
+      <div class="nav-links">
+        <ul>
+          <a href="https://physio-fresh.splose.com/booking"><li><button class="button button_book button_flex pointer">Book Now</button></li></a>
+          <li onclick="ScrollTo('section_bodypart')">Could you benefit? &#11167;</li>
+          <li onclick="ScrollTo('section_about')">About &#11167;</li>
+          <li onclick="ScrollTo('section_ndis')">NDIS &#11167;</li>
+          <li onclick="ScrollTo('section_faq')">F.A.Q. &#11167;</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section section_hero-video">
+      <video id="video_hero" src="media/hero-musc.mp4" loop autoplay></video>
+      <div class="tag">
+        <p>
+          We aim <br />to alleviate <br />your pain <br />
+          so you <br />can return <br />to the activities <br />you love.
+        </p>
+      </div>
+    </div>
+
+    <div class="section pageheight column section_bodypart" id="section_bodypart">
+      <div class="column" id="bodypart-choices">
+        <h2 class="header">Could you benefit from a mechanical assessment?</h2>
+        <p><span class="italic">Click the relevant body area</span> to find out:</p>
+        <div class="bodypart-images section">
+          <div class="bodypart pointer" onclick="LoadBodypart('bodypart-headache')">
+            <img src="media/bodypart-headache.webp" alt="">
+            <p>Headache</p>
+          </div>
+          <div class="bodypart pointer" onclick="LoadBodypart('bodypart-neck')">
+            <img src="media/bodypart-neck.webp" alt="">
+            <p>Neck Pain</p>
+          </div>
+          <div class="bodypart pointer" onclick="LoadBodypart('bodypart-back')">
+            <img src="media/bodypart-back.webp" alt="">
+            <p>Back Pain</p>
+          </div>
+          <div class="bodypart pointer" onclick="LoadBodypart('bodypart-upper-limb')">
+            <img src="media/bodypart-upper-limb.webp" alt="">
+            <p>Upper Limb Pain</p>
+          </div>
+          <div class="bodypart pointer" onclick="LoadBodypart('bodypart-lower-limb')">
+            <img src="media/bodypart-lower-limb.webp" alt="">
+            <p>Lower Limb Pain</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bodypart-questions column section" id="bodypart-headache">
+          <div class="media-box">
+            <p class="return pointer" onclick="ReturnToBodypartChoices('bodypart-headache')">&larr; Return</p>
+            <img src="media/bodypart-headache.webp" alt="headache" />
+          </div>
+          <h3>How likely is it that my headaches are coming from my neck (are mechanical)?</h3>
+          <ul>
+            <li><input type="checkbox" />Does your headache change location? For example, 
+              is it sometimes left sided and other times on the right, or sometimes at 
+              the front and other times more towards the back or side of your head?</li>
+            <li><input type="checkbox" />Do you ever get neck pain or tightness?</li>
+            <li><input type="checkbox" />Do you ever have any restriction in your neck 
+              movement?</li>
+            <li><input type="checkbox" />Do you ever get neck pain, tightness or stiffness 
+              and a headache at the same time?</li>
+            <li><input type="checkbox" />Does your headache ever come on if you haven’t 
+              moved your head and neck for a while eg sitting at a computer / watching tv 
+              / using your phone?</li>
+            <li><input type="checkbox" />Does your headache ever feel better (even slightly 
+              decrease) when you move, stretch or massage your neck?</li>
+          </ul>
+          <p>
+            If you answered 'yes' to any of the above questions, you would
+            benefit from a mechanical diagnosis.
+          </p>
+          <button class="button button_book">Book Now</button>
+        </div>
+
+        <div class="bodypart-questions column section" id="bodypart-neck">
+          <div class="media-box">
+            <p class="return pointer" onclick="ReturnToBodypartChoices('bodypart-neck')">&larr; Return</p>
+            <img src="media/bodypart-neck.webp" alt="headache" />
+          </div>
+          <h3>How likely is it that my neck pain is mechanical?</h3>
+          <ul>
+            <li><input type="checkbox" />Are you generally worse when sitting for
+              prolonged periods, or on rising from the sitting position?</li>
+            <li><input type="checkbox" />Are you generally worse when inactive and
+              better when on the move?</li>
+            <li><input type="checkbox" />Do you sometimes experience pain across
+              the shoulders or into the shoulder blades?</li>
+            <li><input type="checkbox" />Do you sometimes experience pain down the
+              arm and into the hand with symptoms like the feeling of “pins and
+              needles” or numbness in the fingers?</li>
+            <li><input type="checkbox" />If you have pain in between or around
+              your shoulder blades, does it sometimes stop completely, even
+              though you may still have pain in the neck?</li>
+          </ul>
+          <p>
+            If you answered 'yes' to any of the above questions, you would
+            benefit from a mechanical diagnosis.
+          </p>
+          <button class="button button_book">Book Now</button>
+        </div>
+        
+        <div class="bodypart-questions column section" id="bodypart-back">
+          <div class="media-box">
+            <p class="return pointer" onclick="ReturnToBodypartChoices('bodypart-back')">&larr; Return</p>
+            <img src="media/bodypart-back.webp" alt="headache" />
+          </div>
+          <h3>How likely is it that my back pain is mechanical?</h3>
+          <ul>
+            <li><input type="checkbox" />Are you generally worse when sitting for 
+              prolonged periods or upon rising from the sitting position?</li>
+            <li><input type="checkbox" />Is your back pain aggravated by activities 
+              that involve prolonged bending or stooping as in bed-making, vacuuming, 
+              ironing, concreting, digging or gardening, and sometimes the symptoms 
+              can be even more severe the day after the activity?</li>
+            <li><input type="checkbox" />Are you generally worse when getting up in 
+              the morning, but improve after about half an hour?</li>
+            <li><input type="checkbox" />Are you generally worse when inactive and 
+              better when on the move?</li>
+            <li><input type="checkbox" />Are you generally better when walking?</li>
+            <li><input type="checkbox" />If you have pain in the buttocks or upper/lower 
+              leg, does it sometimes stop completely, even though you may still have back pain?</li>
+          </ul>
+          <p>
+            If you answered 'yes' to any of the above questions, you would
+            benefit from a mechanical diagnosis.
+          </p>
+          <button class="button button_book">Book Now</button>
+        </div>
+        
+        <div class="bodypart-questions column section" id="bodypart-upper-limb">
+          <div class="media-box">
+            <p class="return pointer" onclick="ReturnToBodypartChoices('bodypart-upper-limb')">&larr; Return</p>
+            <img src="media/bodypart-upper-limb.webp" alt="headache" />
+          </div>
+          <h3>How likely is it that my upper limb pain is mechanical?</h3>
+          <ul>
+            <li><input type="checkbox" />Are you generally worse when sitting for
+              prolonged periods, or on rising from the sitting position?</li>
+            <li><input type="checkbox" />Are you generally worse when inactive and
+              better when on the move?</li>
+            <li><input type="checkbox" />Do you sometimes experience pain across
+              the shoulders or into the shoulder blades?</li>
+            <li><input type="checkbox" />Do you sometimes experience pain down the
+              arm and into the hand with symptoms like the feeling of “pins and
+              needles” or numbness in the fingers?</li>
+            <li><input type="checkbox" />If you have pain in between or around
+              your shoulder blades, does it sometimes stop completely, even
+              though you may still have pain in the neck?</li>
+          </ul>
+          <p>
+            If you answered 'yes' to any of the above questions, you would
+            benefit from a mechanical diagnosis.
+          </p>
+          <button class="button button_book">Book Now</button>
+        </div>
+        
+        <div class="bodypart-questions column section" id="bodypart-lower-limb">
+          <div class="media-box">
+            <p class="return pointer" onclick="ReturnToBodypartChoices('bodypart-lower-limb')">&larr; Return</p>
+            <img src="media/bodypart-lower-limb.webp" alt="headache" />
+          </div>
+          <h3>How likely is it that my lower limb pain is mechanical?</h3>
+          <ul>
+            <li><input type="checkbox" />Are you generally worse when sitting for
+              prolonged periods, or on rising from the sitting position?</li>
+            <li><input type="checkbox" />Are you generally worse when inactive and
+              better when on the move?</li>
+            <li><input type="checkbox" />Do you sometimes experience pain across
+              the shoulders or into the shoulder blades?</li>
+            <li><input type="checkbox" />Do you sometimes experience pain down the
+              arm and into the hand with symptoms like the feeling of “pins and
+              needles” or numbness in the fingers?</li>
+            <li><input type="checkbox" />If you have pain in between or around
+              your shoulder blades, does it sometimes stop completely, even
+              though you may still have pain in the neck?</li>
+          </ul>
+          <p>
+            If you answered 'yes' to any of the above questions, you would
+            benefit from a mechanical diagnosis.
+          </p>
+          <button class="button button_book">Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section pageheight column section_about" id="section_about">
+      <div class="media-box">
+        <img src="media/about-sitting.png" alt="">
+        <div class="media-text">
+          <p>Our clinic specialises in <span class="italic">Mechanical Diagnosis and Therapy (MDT)</span>,
+            a widely-researched and effective approach for assessing and treating the spine and extremities.
+            The method is unique for its' focus on patient empowerment, utilising education, self-management
+            and active involvement in the treatment process.</p>
+            <p>What that means for your is understanding the source of your pain, collaboratively working
+              with us to develop an action plan which details your role, and our support, in recovery and
+              future prevention.</p>
+            <p>We recognise that pain is complex and deeply personal, so we listen and plan with you at the
+              centre.</p>
+        </div>
+      </div>
+      <div class="media-box">
+        <div class="media-text">
+          <p>Learn more about the MDT Approach, research and evidence in this video:</p>
+        </div>
+        <video src="media/about-video.mp4" alt="video about McKenzie method" controls></video>
+      </div>
+    </div>
+
+    <div class="section pageheight column section_ndis" id="section_ndis">
+      <h2 class="header">Would you like to know more about our NDIS services?</h2>
+      <p>Visit our NDIS page for options!</p>
+      <div class="media-box">
+        <img src="media/ndis.webp" alt="">
+        <img src="media/ndis-stock.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="section pageheight column section_faq" id="section_faq">
+      <div>
+        <h2 class="header">Frequently Asked Questions</h2>
+      </div>
+      <div>
+        <p class="faq_question contracted" id="faq_question_1" onclick="revealAnswer(id)"><b>Is Lee beautiful?</b></p>
+        <p class="faq_answer" id="faq_answer_1">Yes absolutely beautiful.</p>
+        <p class="faq_question contracted" id="faq_question_2" onclick="revealAnswer(id)"><b>Is she gorgeous as well?</b></p>
+        <p class="faq_answer" id="faq_answer_2">Yes even that.</p>
+        <p class="faq_question contracted" id="faq_question_3" onclick="revealAnswer(id)"><b>Does she like grace a room with her presence?</b></p>
+        <p class="faq_answer" id="faq_answer_3">Yeah I guess you could say that.</p>
+        <p class="faq_question contracted" id="faq_question_4" onclick="revealAnswer(id)"><b>Does she sing beautifully?</b></p>
+        <p class="faq_answer" id="faq_answer_4">She sounds like an angel.</p>
+        <p class="faq_question contracted" id="faq_question_5" onclick="revealAnswer(id)"><b>Is this all lies?</b></p>
+        <p class="faq_answer" id="faq_answer_5">What?</p>
+        <p class="faq_question contracted" id="faq_question_6" onclick="revealAnswer(id)"><b>Is Lee beautiful?</b></p>
+        <p class="faq_answer" id="faq_answer_6">Yes absolutely beautiful.</p>
+        <p class="faq_question contracted" id="faq_question_7" onclick="revealAnswer(id)"><b>Is she gorgeous as well?</b></p>
+        <p class="faq_answer" id="faq_answer_7">Yes even that.</p>
+        <p class="faq_question contracted" id="faq_question_8" onclick="revealAnswer(id)"><b>Does she like grace a room with her presence?</b></p>
+        <p class="faq_answer" id="faq_answer_8">Yeah I guess you could say that.</p>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="section column section_footer">
+      <img src="media/logo-white.webp" alt="Physio Fresh logo">
+      <p>&copy; 2025</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+<!--
+
+  <div id="darken-color"></div>
+
+  </body>
+</html>
+
+    -->
