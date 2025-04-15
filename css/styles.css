@@ -57,7 +57,8 @@ button { font-family: "Montserrat", sans-serif }
 
 .header {
     color: var(--color-primary);
-    font-size: 30px;
+    font-size: clamp(20px, 3vw, 30px);
+    
     font-weight: 600;
 }
 
@@ -179,14 +180,14 @@ button { font-family: "Montserrat", sans-serif }
     .section_nav-bar {
         flex-direction: column;
         padding-top: 20px;
-        gap: 20px;
+        gap: 1vw;
     }
     .section_nav-bar ul { text-align: center; }
     .section_nav-bar li {
         font-size: 22px;
         text-wrap: nowrap;        
     }
-    .logo img { width: 425px; }
+    .logo img { width: clamp(225px, 35vw, 425px); }
     .small-logos img { width: 100px; }
     .section_nav-bar .button_book,
     .section_nav-bar .button_ndis { display: block; margin: auto; margin-bottom: 10px; }
