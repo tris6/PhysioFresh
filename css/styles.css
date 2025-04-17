@@ -53,7 +53,12 @@ ul {
 /* GLOBAL TEXT */
 a { text-decoration: none; }
 
-button { font-family: "Montserrat", sans-serif }
+button { font-family: "Montserrat", sans-serif; }
+
+.arrow {
+    width: 0.65em !important;
+    height: auto !important;
+}
 
 .header {
     color: var(--color-primary);
@@ -150,13 +155,16 @@ button { font-family: "Montserrat", sans-serif }
     height: auto;
 }
 
+.section_nav-bar button {
+    font-size: 1vw;
+}
+
 .nav-bar_ndis {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
 }
-
 
 .section_nav-bar ul {
     display: inline-block;
@@ -176,7 +184,7 @@ button { font-family: "Montserrat", sans-serif }
     cursor: pointer;
 }
 
-@media screen and (max-width: 1278px) {
+@media screen and (max-width: 1350px) {
     .section_nav-bar {
         flex-direction: column;
         padding-top: 20px;
@@ -188,7 +196,10 @@ button { font-family: "Montserrat", sans-serif }
         text-wrap: nowrap;        
     }
     .logo img { width: clamp(225px, 35vw, 425px); }
-    .small-logos img { width: 100px; }
+    .small-logos img {
+        width: 100px;
+        height: auto;
+    }
     .section_nav-bar .button_book,
     .section_nav-bar .button_ndis { display: block; margin: auto; margin-bottom: 10px; }
 }
