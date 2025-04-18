@@ -16,25 +16,45 @@
 
   <div class="main-page" id="main-page">
 
-    <div class="section section_nav-bar">
+    <div class="section section_nav-bar section_nav-bar_desktop">
       <div class="small-logos">
         <img src="media/APA.webp" alt="APA logo">
-        <div class="nav-bar_ndis">
-          <img src="media/ndis.webp" alt="NDIS logo">
-          <a href="ndis.html"><button class="button button_ndis button_flex pointer">See Our NDIS Services</button></a>
-        </div>
+        <img src="media/ndis.webp" alt="NDIS logo">
       </div>
-      <div class="logo">
+      <a href="ndis.html"><button class="button button_ndis button_flex pointer">See Our NDIS Services</button></a>
+      <div class="main-logo">
         <img src="media/logo.svg" alt="Physio Fresh logo">
       </div>
-        <ul>
-          <a href="https://physio-fresh.splose.com/booking"><li><button class="button button_book button_flex pointer">Book an Appointment</button></li></a>
-            <li onclick="ScrollTo('section_bodypart')">Could you benefit? <img class="arrow" src="media/arrow.png" alt="" /></li>
-            <li onclick="ScrollTo('section_about')">About <img class="arrow" src="media/arrow.png" alt="" /></li>
-            <li onclick="ScrollTo('section_ndis')">NDIS <img class="arrow" src="media/arrow.png" alt="" /></li>
-            <li onclick="ScrollTo('section_faq')">F.A.Q. <img class="arrow" src="media/arrow.png" alt="" /></li>
-        </ul>
+      <button class="button button_book button_flex pointer">Book an Appointment</button>
+      <ul>
+        <li onclick="ScrollTo('section_bodypart')">Could you benefit? <img class="arrow" src="media/arrow.png" alt="" /></li>
+        <li onclick="ScrollTo('section_about')">About <img class="arrow" src="media/arrow.png" alt="" /></li>
+        <a href="ndis.html"><li>NDIS <img class="arrow" src="media/arrow.png" alt="" /></li></a>
+        <li onclick="ScrollTo('section_faq')">F.A.Q. <img class="arrow" src="media/arrow.png" alt="" /></li>
+      </ul>
     </div>
+
+    <div class="section section_nav-bar section_nav-bar_mobile">
+      <div class="small-logos">
+        <img src="media/APA.webp" alt="APA logo">
+        <img src="media/ndis.webp" alt="NDIS logo">
+      </div>
+      <div class="main-logo">
+        <img src="media/logo.svg" alt="Physio Fresh logo">
+      </div>
+      <div class="nav-bar_mobile-buttons">
+        <a href="ndis.html"><button class="button button_ndis button_flex pointer">See Our NDIS Services</button></a>
+        <button class="button button_book button_flex pointer">Book an Appointment</button>
+      </div>
+      <ul>
+        <li onclick="ScrollTo('section_bodypart')">Could you benefit? <img class="arrow" src="media/arrow.png" alt="" /></li>
+        <li onclick="ScrollTo('section_about')">About <img class="arrow" src="media/arrow.png" alt="" /></li>
+        <a href="ndis.html"><li>NDIS <img class="arrow" src="media/arrow.png" alt="" /></li></a>
+        <li onclick="ScrollTo('section_faq')">F.A.Q. <img class="arrow" src="media/arrow.png" alt="" /></li>
+      </ul>
+    </div>
+
+
 
     <div class="section section_hero-video">
       <video id="video_hero" src="media/hero-musc.mp4" loop autoplay muted></video>

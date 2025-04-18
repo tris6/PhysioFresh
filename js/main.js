@@ -14,6 +14,7 @@ function LoadBodypart(bodypart) {
   setTimeout(() => { document.getElementById(bodypart).classList.add('fade-in') }, 500);
   setTimeout(() => { document.getElementById(bodypart).style.display = 'flex' }, 500);
   setTimeout(() => { bodypartChoices.classList.remove('fade-out')}, 600);
+  setTimeout(() => { ScrollTo(bodypart) }, 600);
 }
 
 function ReturnToBodypartChoices(bodypart) {
@@ -22,6 +23,7 @@ function ReturnToBodypartChoices(bodypart) {
   setTimeout(() => { bodypartChoices.classList.add('fade-in') }, 500);
   setTimeout(() => { bodypartChoices.style.display = 'flex' }, 500);
   setTimeout(() => { document.getElementById(bodypart).classList.remove('fade-out') }, 600);
+  setTimeout(() => { ScrollTo('section_bodypart') }, 600);
 }
 
 /* FAQ Reveal Answer */

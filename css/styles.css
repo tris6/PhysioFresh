@@ -51,7 +51,7 @@ ul {
 
 
 /* GLOBAL TEXT */
-a { text-decoration: none; }
+a { text-decoration: none; color: inherit; }
 
 button { font-family: "Montserrat", sans-serif; }
 
@@ -131,46 +131,38 @@ button { font-family: "Montserrat", sans-serif; }
 
 /* NAVBAR */
 .section_nav-bar {
-    height: fit-content;
     display: flex;
-    background-color: var(--color-light-background);
+    height: fit-content;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+
+    background-color: var(--color-light-background);
     font-family: "Calibri", sans-serif;
 }
 
-.section_nav-bar img {
-    height: 80px;
-    width: clamp(280px, 20vw, 20vw);
+.main-logo img {
+    width: 18vw;
+    height: auto;
 }
 
 .small-logos {
     display: flex;
     gap: 1vw;
 }
-
 .small-logos img {
-    width: clamp(80px, 8vw, 150px);
+    width: clamp(80px, 7vw, 400px);
     height: auto;
 }
 
-.section_nav-bar button {
-    font-size: 1vw;
-}
-
-.nav-bar_ndis {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+.section_nav-bar_desktop button {
+    font-size: clamp(12px, 0.85vw, 24px);
 }
 
 .section_nav-bar ul {
     display: inline-block;
     padding-left: 0;
 }
-
 .section_nav-bar li {
     display: inline;
     padding-right: 20px;
@@ -178,30 +170,51 @@ button { font-family: "Montserrat", sans-serif; }
     font-weight: 500;
     text-wrap: wrap;
 }
-
 .section_nav-bar li:hover {
     color: grey;
     cursor: pointer;
 }
 
-@media screen and (max-width: 1350px) {
-    .section_nav-bar {
-        flex-direction: column;
-        padding-top: 20px;
-        gap: 1vw;
-    }
-    .section_nav-bar ul { text-align: center; }
-    .section_nav-bar li {
-        font-size: 22px;
-        text-wrap: nowrap;        
-    }
-    .logo img { width: clamp(225px, 35vw, 425px); }
-    .small-logos img {
-        width: 100px;
-        height: auto;
-    }
-    .section_nav-bar .button_book,
-    .section_nav-bar .button_ndis { display: block; margin: auto; margin-bottom: 10px; }
+/* */
+.section_nav-bar_mobile {
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 3vw;
+}
+
+.section_nav-bar_mobile > .main-logo img {
+    width: clamp(240px, 35vw, 400px);
+}
+
+.section_nav-bar_mobile > .small-logos {
+    width: 100%;
+    justify-self: start;
+    gap: 3vw;
+}
+.section_nav-bar_mobile > .small-logos img {
+    width: clamp(80px, 10vw, 115px);
+}
+
+.nav-bar_mobile-buttons {
+    display: flex;
+    gap: 5vw;
+}
+
+.section_nav-bar_mobile ul {
+    text-align: center;
+}
+.section_nav-bar_mobile li {
+    font-size: clamp(20px, 3vw, 24px);
+    text-wrap: nowrap;
+}
+
+
+.section_nav-bar_mobile {
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .section_nav-bar_desktop { display: none; }
+    .section_nav-bar_mobile { display: flex; }
 }
 
 
@@ -266,7 +279,6 @@ button { font-family: "Montserrat", sans-serif; }
 @media screen and (max-width: 1250px) {
     .bodypart-images { margin-top: 5vh; }
 }
-
 
 /* BODY PART QUESTIONS */
 .bodypart-questions {
