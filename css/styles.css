@@ -325,24 +325,9 @@ button { font-family: "Montserrat", sans-serif; }
     .section_about video { width: 300px; }
 }
 
-/* NDIS */
-.section_ndis {
-    justify-content: space-between;
-    align-items: center;
-
-    text-align: center;
-}
-
-.section_ndis img {
-    width: 30vw;
-}
-
 /* FAQ */
 .section_faq, .section_faq h2 {
     justify-content: space-between;
-    
-    color: var(--color-light-background);
-    background-color: var(--color-dark-background);
 }
 
 .section_faq h2 { text-align: center; }
