@@ -12,33 +12,41 @@
   </head>
   <body>
     <div class="main-page" id="main-page">
-      <div class="section section_nav-bar">
+
+      <div class="section section_nav-bar section_nav-bar_desktop">
         <div class="small-logos">
-          <img src="media/APA.webp" alt="APA logo" />
-          <div class="nav-bar_ndis">
-            <img src="media/ndis.webp" alt="NDIS logo" />
-          </div>
+          <img src="media/APA.webp" alt="APA logo">
+          <img src="media/ndis.webp" alt="NDIS logo">
         </div>
-        <div class="logo">
-          <img src="media/logo.svg" alt="Physio Fresh logo" />
+        <div class="main-logo">
+          <img src="media/logo.svg" alt="Physio Fresh logo">
         </div>
-        <div class="nav-links">
-          <ul>
-            <a
-              href="https://physio-fresh.splose.com/public-form/ab5276e0-6a0b-484c-ae5e-cb8a612622de"
-              ><li>
-                <button class="button button_ndis button_flex pointer">
-                  Refer Now
-                </button>
-              </li></a
-            >
-            <li onclick="ScrollTo('section_about')">About &#11167;</li>
-            <li onclick="ScrollTo('section_bodypart')">
-              For Coordinators &#11167;
-            </li>
-            <li onclick="ScrollTo('section_ndis')">Refer &#11167;</li>
-          </ul>
+        <a href="https://physio-fresh.splose.com/booking"><button class="button button_ndis button_flex pointer">Make a Referral</button></a>
+        <ul>
+          <li onclick="ScrollTo('section_about')">About <img class="arrow" src="media/arrow.png" alt="" /></li>
+          <li onclick="ScrollTo('section_bodypart')">Our Facilities <img class="arrow" src="media/arrow.png" alt="" /></li>
+          <li onclick="ScrollTo('section_bodypart')">For Co-ordinators <img class="arrow" src="media/arrow.png" alt="" /></li>
+          <li onclick="ScrollTo('section_faq')">F.A.Q. <img class="arrow" src="media/arrow.png" alt="" /></li>
+        </ul>
+      </div>
+  
+      <div class="section section_nav-bar section_nav-bar_mobile">
+        <div class="small-logos">
+          <img src="media/APA.webp" alt="APA logo">
+          <img src="media/ndis.webp" alt="NDIS logo">
         </div>
+        <div class="main-logo">
+          <img src="media/logo.svg" alt="Physio Fresh logo">
+        </div>
+        <div class="nav-bar_mobile-buttons">
+          <button class="button button_ndis button_flex pointer">Make a Referral</button>
+        </div>
+        <ul>
+          <li onclick="ScrollTo('section_about')">About <img class="arrow" src="media/arrow.png" alt="" /></li>
+          <li onclick="ScrollTo('section_bodypart')">Our Facilities <img class="arrow" src="media/arrow.png" alt="" /></li>
+          <li onclick="ScrollTo('section_bodypart')">For Co-ordinators <img class="arrow" src="media/arrow.png" alt="" /></li>
+          <li onclick="ScrollTo('section_faq')">F.A.Q. <img class="arrow" src="media/arrow.png" alt="" /></li>
+        </ul>
       </div>
 
       <div class="section section_hero-video">
