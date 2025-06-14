@@ -16,46 +16,25 @@
 
   <div class="main-page" id="main-page">
 
-    <div class="section section_nav-bar section_nav-bar_desktop">
-      <div class="small-logos">
-        <img src="media/APA.webp" alt="APA logo">
-        <img src="media/ndis.webp" alt="NDIS logo">
-      </div>
-      <a href="ndis.html"><button class="button button_ndis button_flex pointer">See Our NDIS Services</button></a>
-      <div class="main-logo">
+    <div class="section section_navbar section_navbar">
+      <div class="navbar_logo">
         <img src="media/logo.svg" alt="Physio Fresh logo">
       </div>
-      <a href="https://physio-fresh.splose.com/booking"><button class="button button_book button_flex pointer">Book an Appointment</button></a>
-      <ul>
-        <li onclick="ScrollTo('section_bodypart')">Could you benefit? <img class="arrow" src="media/arrow.png" alt="" /></li>
-        <li onclick="ScrollTo('section_about')">About <img class="arrow" src="media/arrow.png" alt="" /></li>
-        <a href="ndis.html"><li>NDIS <img class="arrow" src="media/arrow.png" alt="" /></li></a>
-        <li onclick="ScrollTo('section_faq')">F.A.Q. <img class="arrow" src="media/arrow.png" alt="" /></li>
-      </ul>
-    </div>
-
-    <div class="section section_nav-bar section_nav-bar_mobile">
-      <div class="small-logos">
-        <img src="media/APA.webp" alt="APA logo">
-        <img src="media/ndis.webp" alt="NDIS logo">
-      </div>
-      <div class="main-logo">
-        <img src="media/logo.svg" alt="Physio Fresh logo">
-      </div>
-      <div class="nav-bar_mobile-buttons">
+      <div class="navbar_buttons">
+        <a href="https://physio-fresh.splose.com/booking"><button class="button button_book button_flex pointer">Book an Appointment</button></a>
         <a href="ndis.html"><button class="button button_ndis button_flex pointer">See Our NDIS Services</button></a>
-        <button class="button button_book button_flex pointer">Book an Appointment</button>
       </div>
-      <ul>
-        <li onclick="ScrollTo('section_bodypart')">Could you benefit? <img class="arrow" src="media/arrow.png" alt="" /></li>
-        <li onclick="ScrollTo('section_about')">About <img class="arrow" src="media/arrow.png" alt="" /></li>
-        <a href="ndis.html"><li>NDIS <img class="arrow" src="media/arrow.png" alt="" /></li></a>
-        <li onclick="ScrollTo('section_faq')">F.A.Q. <img class="arrow" src="media/arrow.png" alt="" /></li>
-      </ul>
+      <div class="navbar_links">
+        <ul>
+          <li onclick="ScrollTo('section_bodypart')">Is Physio right for me? <img class="arrow" src="media/arrow-down.png" alt="" /></li>
+          <li onclick="ScrollTo('section_services')">Services <img class="arrow" src="media/arrow-down.png" alt="" /></li>
+          <li onclick="ScrollTo('section_online')">ONLINE Training <img class="arrow" src="media/arrow-down.png" alt="" /></li>
+          <li onclick="ScrollTo('section_about')">About <img class="arrow" src="media/arrow-down.png" alt="" /></li>
+          <li onclick="ScrollTo('section_faq')">F.A.Q. <img class="arrow" src="media/arrow-down.png" alt="" /></li>
+        </ul>
+      </div>
     </div>
-
-
-
+    
     <div class="section section_hero-video">
       <video id="video_hero" src="media/hero-musc.mp4" autoplay loop muted playsinline></video>
       <div class="tag">
@@ -68,7 +47,7 @@
 
     <div class="section pageheight column section_bodypart" id="section_bodypart">
       <div class="column" id="bodypart-choices">
-        <h2 class="header">Could you benefit from a mechanical assessment?</h2>
+        <h2 class="header">Is physio right for me?</h2>
         <p><span class="italic">Click the relevant body area</span> to find out:</p>
         <div class="bodypart-images section">
           <div class="bodypart pointer" onclick="LoadBodypart('bodypart-headache')">
@@ -120,7 +99,7 @@
             If you answered 'yes' to any of the above questions, you would
             benefit from a mechanical diagnosis.
           </p>
-          <button class="button button_book">Book Now</button>
+          <button class="button button_book">Book an Appointment</button>
         </div>
 
         <div class="bodypart-questions column section" id="bodypart-neck">
@@ -147,7 +126,7 @@
             If you answered 'yes' to any of the above questions, you would
             benefit from a mechanical diagnosis.
           </p>
-          <button class="button button_book">Book Now</button>
+          <button class="button button_book">Book an Appointment</button>
         </div>
         
         <div class="bodypart-questions column section" id="bodypart-back">
@@ -175,7 +154,7 @@
             If you answered 'yes' to any of the above questions, you would
             benefit from a mechanical diagnosis.
           </p>
-          <button class="button button_book">Book Now</button>
+          <button class="button button_book">Book an Appointment</button>
         </div>
         
         <div class="bodypart-questions column section" id="bodypart-upper-limb">
@@ -202,7 +181,7 @@
             If you answered 'yes' to any of the above questions, you would
             benefit from a mechanical diagnosis.
           </p>
-          <button class="button button_book">Book Now</button>
+          <button class="button button_book">Book an Appointment</button>
         </div>
         
         <div class="bodypart-questions column section" id="bodypart-lower-limb">
@@ -229,24 +208,38 @@
             If you answered 'yes' to any of the above questions, you would
             benefit from a mechanical diagnosis.
           </p>
-          <button class="button button_book">Book Now</button>
+          <button class="button button_book">Book an Appointment</button>
         </div>
       </div>
     </div>
 
-    <div class="section pageheight column section_about" id="section_about">
+    <div class="section pageheight column whiteondark section_services" id="section_services">
+      <h2>Physiotherapy Services</h2>
+      <p><img class="arrow" src="media/arrow-right-white.png" alt="" />&nbsp;&nbsp;&nbsp;Physiotherapy - in clinic</p>
+      <p><img class="arrow" src="media/arrow-right-white.png" alt="" />&nbsp;&nbsp;&nbsp;Physiotherapy - telehealth</p>
+      <p><img class="arrow" src="media/arrow-right-white.png" alt="" />&nbsp;&nbsp;&nbsp;Physiotherapy - ONLINE training</p>
+      <p><img class="arrow" src="media/arrow-right-white.png" alt="" />&nbsp;&nbsp;&nbsp;Physiotherapy - hydrotherapy</p>
+    </div>
+
+    <div class="section pageheight section_online" id="section_online">
+      <h2>ONLINE Training</h2>
+      <div class="media-box">
+        <div class="media-text">
+          <p>Overcome pain, free up your body, and get back into movement.</p><p>Full programming in the comfort of your own home.</p>
+        </div>
+        <img src="media/online training.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="section pageheight whiteondark column section_about" id="section_about">
       <div class="media-box">
         <img src="media/about-sitting.png" alt="">
         <div class="media-text">
-          <p>Our clinic specialises in <span class="italic">Mechanical Diagnosis and Therapy (MDT)</span>,
-            a widely-researched and effective approach for assessing and treating the spine and extremities.
-            The method is unique for its' focus on patient empowerment, utilising education, self-management
-            and active involvement in the treatment process.</p>
-            <p>What that means for your is understanding the source of your pain, collaboratively working
-              with us to develop an action plan which details your role, and our support, in recovery and
-              future prevention.</p>
-            <p>We recognise that pain is complex and deeply personal, so we listen and plan with you at the
-              centre.</p>
+          <p>Our clinic specialises in <span class="italic">Mechanical Diagnosis and Therapy (MDT)</span>, 
+            a widely-researched and effective approach for assessing and treating the spine and extremities.</p>
+          <p>We don’t do dry needle. We don’t cup. We don’t prescribe generic exercises.  But in 3-5 sessions 
+            you will know if we can alleviate your pain, and get you back to the activities you love.</p>
+
         </div>
       </div>
       <div class="media-box">
@@ -283,8 +276,15 @@
     </div>
 
     <div class="section column section_footer">
-      <img src="media/logo-white.webp" alt="Physio Fresh logo">
-      <p>&copy; 2025</p>
+      <div class="section_footer_small-logos">
+        <img src="media/APA.webp" alt="APA logo">
+        <img src="media/NDIS.webp" alt="NDIS logo">
+      </div>
+      <div class="section_footer_main-logo">
+        <img src="media/logo-white.webp" alt="Physio Fresh logo">
+        <p>&copy; 2025</p>
+      </div>
+      <div class="section_footer_empty"></div>
     </div>
 
   </div>

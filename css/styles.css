@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* GLOBAL COLOURS */
 :root {
@@ -20,7 +21,7 @@ body {
     margin: 0;
 
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 
@@ -70,6 +71,11 @@ button { font-family: "Montserrat", sans-serif; }
 .italic { font-style: italic; }
 
 .bold { font-weight: 600; }
+
+.whiteondark {
+    background-color: var(--color-dark-background);
+    color: white;
+}
 
 .right {
     display: flex;
@@ -128,9 +134,8 @@ button { font-family: "Montserrat", sans-serif; }
     100% { opacity: 0; }
 }
 
-
 /* NAVBAR */
-.section_nav-bar {
+.section_navbar {
     display: flex;
     height: fit-content;
     justify-content: space-between;
@@ -138,83 +143,55 @@ button { font-family: "Montserrat", sans-serif; }
     padding: 10px 20px;
 
     background-color: var(--color-light-background);
-    font-family: "Calibri", sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
-.main-logo img {
+.navbar_buttons {
+    display: flex;
+    gap: 2.4vw;
+}
+
+.navbar_buttons button {
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(12px, 1.1vw, 20px);
+    font-weight: 500;
+}
+
+.navbar_logo img {
     width: 18vw;
     height: auto;
 }
 
-.small-logos {
-    display: flex;
-    gap: 1vw;
-}
-.small-logos img {
-    width: clamp(80px, 7vw, 400px);
-    height: auto;
-}
+.navbar_links { text-align: center; }
 
-.section_nav-bar_desktop button {
-    font-size: clamp(12px, 0.85vw, 24px);
-}
-
-.section_nav-bar ul {
+.navbar_links ul {
     display: inline-block;
+    text-justify: center;
     padding-left: 0;
 }
-.section_nav-bar li {
+.navbar_links li {
     display: inline;
-    padding-right: 20px;
-    font-size: clamp(12px, 1.2vw, 22px);
-    font-weight: 500;
-    text-wrap: wrap;
+    padding-right: 25px;
+    font-size: clamp(14px, 1.1vw, 20px);
+    line-height: 2.5;
+    text-wrap: nowrap;
 }
-.section_nav-bar li:hover {
+.section_navbar li:hover {
     color: grey;
     cursor: pointer;
 }
 
-/* */
-.section_nav-bar_mobile {
-    flex-direction: column;
-    gap: 1em;
-    padding-bottom: 3vw;
-}
+/* NAVBAR MOBILE */
+@media screen and (max-width: 1300px) {
+    .section_navbar {
+        flex-direction: column;
+        padding: 20px 20px;
+        gap: 25px;
+    }
 
-.section_nav-bar_mobile > .main-logo img {
-    width: clamp(240px, 35vw, 400px);
-}
-
-.section_nav-bar_mobile > .small-logos {
-    width: 100%;
-    justify-self: start;
-    gap: 3vw;
-}
-.section_nav-bar_mobile > .small-logos img {
-    width: clamp(80px, 10vw, 115px);
-}
-
-.nav-bar_mobile-buttons {
-    display: flex;
-    gap: 5vw;
-}
-
-.section_nav-bar_mobile ul {
-    text-align: center;
-}
-.section_nav-bar_mobile li {
-    font-size: clamp(20px, 3vw, 24px);
-    text-wrap: nowrap;
-}
-
-
-.section_nav-bar_mobile {
-    display: none;
-}
-@media screen and (max-width: 1200px) {
-    .section_nav-bar_desktop { display: none; }
-    .section_nav-bar_mobile { display: flex; }
+    .navbar_logo img { width: 400px; }
+    .navbar_buttons button { font-size: 18px; }
+    .navbar_links li { font-size: 18px; }
 }
 
 
@@ -305,14 +282,14 @@ button { font-family: "Montserrat", sans-serif; }
     .bodypart-questions li { max-inline-size: 140ch; }
 }
 
+/* ONLINE */
+.section_online h2 { text-align: center; }
+
 /* ABOUT */
 .section_about {
     justify-content: space-evenly;
     align-items: center;
     gap: 40px;
-
-    background-color: var(--color-dark-background);
-    color: white;
 }
 
 .section_about img { width: clamp(250px, 20vw, 20vw); }
@@ -345,13 +322,31 @@ button { font-family: "Montserrat", sans-serif; }
 
 /* FOOTER */
 .section_footer {   
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     
     background-color: var(--color-dark-background);
     color: white;
 }
 
-.section_footer img { width: 200px; }
+.section_footer_small-logos, .section_footer_main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_footer_small-logos { gap: 40px; }
+.section_footer_main-logo { flex-direction: column; }
+.section_footer_empty { width: 20vw; }
+
+.section_footer_small-logos img { height: 60px; }
+.section_footer_main-logo img { height: 70px; }
+
+@media screen and (max-width: 1020px) {
+    .section_footer { flex-direction: column-reverse; }
+}
+
 
 
 
