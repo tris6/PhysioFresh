@@ -71,6 +71,10 @@ button { font-family: "Montserrat", sans-serif; }
 
 .bold { font-weight: 600; }
 
+li {
+    list-style-type: none;
+}
+
 .whiteondark {
     background-color: var(--color-dark-background);
     color: white;
@@ -103,6 +107,7 @@ button { font-family: "Montserrat", sans-serif; }
 
     color: white;
     border: 0;
+    box-shadow: 3px 3px 5px grey;
 }
 
 .button:hover {
@@ -180,9 +185,6 @@ button { font-family: "Montserrat", sans-serif; }
     cursor: pointer;
 }
 
-
-
-
 /* NAVBAR MOBILE */
 @media screen and (max-width: 1300px) {
     .section_navbar {
@@ -200,7 +202,15 @@ button { font-family: "Montserrat", sans-serif; }
 /* HERO VIDEO */
 .section_hero-video { padding: 0px; }
 
-.section_hero-video video { width: 100%; }
+.section_hero-video video {
+    width: 100%;
+    object-fit: cover;
+    height: 28vw;
+}
+
+@media screen and (max-width: 1450px) { .section_hero-video video { height: 35vw; } }
+@media screen and (max-width: 1100px) { .section_hero-video video { height: 49vw; } }
+@media screen and (max-width: 550px) { .section_hero-video video { height: 256w; } }
 
 .section_hero-video {
     justify-content: start;
@@ -358,6 +368,32 @@ button { font-family: "Montserrat", sans-serif; }
 .section_ndis_coordinators li {
     line-height: 1.5;
 }
+
+/* ONLINE TRAINING */
+.section_online p { line-height: 1.5; }
+
+.section_online li {
+    line-height: 2.5;
+    list-style: disc;
+}
+
+.section_online {
+    display: flex;
+    align-items: center;
+}
+
+.section_online .media-box { gap: 30px; }
+
+.section_online img { width: 250px; }
+
+.section_online .bigger { width: 450px; }
+
+.section_online .more-space {
+    display: flex;
+    height: 75px;
+}
+
+.section_online .more-gap { gap: 100px; }
 
 
 

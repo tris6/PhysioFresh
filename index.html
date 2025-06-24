@@ -16,7 +16,7 @@
 
   <div class="main-page" id="main-page">
 
-    <div class="section section_navbar section_navbar">
+    <div class="section section_navbar">
       <div class="navbar_logo">
         <img src="media/logo.svg" alt="Physio Fresh logo">
       </div>
@@ -28,7 +28,7 @@
         <ul>
           <li onclick="ScrollTo('section_bodypart')">Is Physio right for me? <img class="arrow" src="media/arrow-down.png" alt="" /></li>
           <li onclick="ScrollTo('section_services')">Services <img class="arrow" src="media/arrow-down.png" alt="" /></li>
-          <li onclick="ScrollTo('section_online')">ONLINE Training <img class="arrow" src="media/arrow-down.png" alt="" /></li>
+          <a href="online.html"><li>ONLINE Training <img class="arrow" src="media/arrow-down.png" alt="" /></li></a>
           <li onclick="ScrollTo('section_about')">About <img class="arrow" src="media/arrow-down.png" alt="" /></li>
           <li onclick="ScrollTo('section_faq')">F.A.Q. <img class="arrow" src="media/arrow-down.png" alt="" /></li>
         </ul>
@@ -36,7 +36,7 @@
     </div>
     
     <div class="section section_hero-video">
-      <video id="video_hero" src="media/hero-musc.mp4" autoplay loop muted playsinline></video>
+      <video id="video_hero" src="media/testvid.mp4" autoplay loop muted playsinline></video>
       <div class="tag">
         <p>
           We aim <br />to alleviate <br />your pain <br />
@@ -206,17 +206,7 @@
       <p><img class="arrow" src="media/arrow-right-white.png" alt="" />&nbsp;&nbsp;&nbsp;Physiotherapy - hydrotherapy</p>
     </div>
 
-    <div class="section pageheight section_online" id="section_online">
-      <h2>ONLINE Training</h2>
-      <div class="media-box">
-        <div class="media-text">
-          <p>Overcome pain, free up your body, and get back into movement.</p><p>Full programming in the comfort of your own home.</p>
-        </div>
-        <img src="media/online training.jpg" alt="">
-      </div>
-    </div>
-    
-    <div class="section pageheight whiteondark column section_about" id="section_about">
+    <div class="section pageheight column section_about" id="section_about">
       <div class="media-box">
         <img src="media/about-sitting.png" alt="">
         <div class="media-text">
@@ -235,7 +225,7 @@
       </div>
     </div>
 
-    <div class="section pageheight column section_faq" id="section_faq">
+    <div class="section pageheight whiteondark column section_faq" id="section_faq">
       <div>
         <h2 class="header">Frequently Asked Questions</h2>
       </div>
